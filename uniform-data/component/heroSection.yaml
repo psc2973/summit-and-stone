@@ -8,7 +8,7 @@ parameters:
     name: Title
     type: text
     guidance: Keep it less than 25 characters
-    helpText: Title of the Component
+    helpText: Title of the component
     typeConfig:
       required: true
     localizable: true
@@ -25,11 +25,11 @@ parameters:
       allowedTypes:
         - image
     localizable: true
-categoryId: 9352cf1f-5167-4d99-9e24-ecebea2047ee
+categoryId: 49e3af8f-cbe0-4f98-a61b-ae8c0eb811c8
 useTeamPermissions: true
 slots: []
 titleParameter: title
 thumbnailParameter: image
 canBeComposition: false
-created: '2026-10-05T11:07:37.823197+00:00'
-updated: '2026-10-05T11:07:37.823197+00:00'
+created: '2026-10-16T19:25:58.739271+00:00'
+updated: '2026-10-16T19:25:58.739271+00:00'

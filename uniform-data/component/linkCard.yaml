@@ -7,19 +7,19 @@ parameters:
   - id: title
     name: Title
     type: text
-    guidance: 2-5 word card title.
+    guidance: Short card title, about 2-6 words.
     typeConfig:
       required: true
     localizable: true
   - id: description
     name: Description
     type: text
-    guidance: One or two sentences, under 160 characters.
+    guidance: One or two sentences summarizing the destination.
     localizable: true
   - id: image
     name: Image
     type: asset
-    guidance: Landscape photo, ideally 4:3.
+    guidance: Card photo. A 4:3 image works best with the standard ratio.
     typeConfig:
       required: true
       allowedTypes:
@@ -27,6 +27,7 @@ parameters:
   - id: link
     name: Link
     type: link
+    guidance: Destination for the card.
     typeConfig:
       required: true
       linkTypes:
@@ -35,20 +36,31 @@ parameters:
       linkAttributes:
         enableAnchor: true
     localizable: true
+  - id: appearance
+    name: Appearance
+    type: group
+    typeConfig:
+      childrenParams:
+        - imageRatio
+        - hoverEffect
+        - showDescription
+        - showArrow
   - id: imageRatio
     name: Image Ratio
     type: select
+    guidance: Crop of the card image. Standard is 4:3.
     typeConfig:
       options:
         - text: Standard (4:3)
           value: standard
         - text: Wide (16:9)
           value: wide
-        - text: Square (1:1)
+        - text: Square
           value: square
   - id: hoverEffect
-    name: Image Hover Effect
+    name: Hover Effect
     type: select
+    guidance: Image motion when the pointer is over the card.
     typeConfig:
       options:
         - text: Zoom
@@ -58,16 +70,16 @@ parameters:
   - id: showDescription
     name: Show Description
     type: checkbox
+    guidance: Turn on to show the description under the title.
   - id: showArrow
     name: Show Arrow
     type: checkbox
-description: >-
-  Clickable card with an image, title and short description that links to
-  another page.
+    guidance: Turn on to show an arrow beside the title.
+description: A linked card with an image, title, and optional description.
 useTeamPermissions: true
 slots: []
 titleParameter: title
 thumbnailParameter: image
 canBeComposition: false
-created: '2026-10-07T13:43:49.003254+00:00'
-updated: '2026-10-07T13:43:49.003254+00:00'
+created: '2026-10-20T13:40:43.706697+00:00'
+updated: '2026-10-20T13:40:43.706697+00:00'

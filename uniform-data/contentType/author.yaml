@@ -1,7 +1,7 @@
 id: author
 name: Author
-created: '2026-10-08T08:19:38.405436+00:00'
-updated: '2026-10-08T08:19:38.405436+00:00'
+created: '2026-10-20T20:37:16.277341+00:00'
+updated: '2026-10-20T20:37:16.277341+00:00'
 useTeamPermissions: true
 slugSettings: {}
 fields:
@@ -14,12 +14,14 @@ fields:
   - id: title
     name: Title
     type: text
-    typeConfig: null
+    typeConfig:
+      required: true
     localizable: true
   - id: image
     name: Image
     type: asset
     typeConfig:
+      required: false
       allowedTypes:
         - image
     localizable: true

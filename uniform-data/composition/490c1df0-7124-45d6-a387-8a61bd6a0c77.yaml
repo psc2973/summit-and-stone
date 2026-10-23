@@ -1,0 +1,148 @@
+composition:
+  _name: Article Detail
+  _id: 490c1df0-7124-45d6-a387-8a61bd6a0c77
+  _slug: ':article-url'
+  type: articleDetailComposition
+  slots:
+    content:
+      - _id: 8a3c45b4-186b-404a-8644-a0e6f037d66a
+        type: newsArticle
+        parameters:
+          body:
+            type: richText
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/content/value}
+          tags:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/articleCategories/value/0}
+          image:
+            type: asset
+            locales:
+              en-US:
+                - _id: 12d9bfbc-76f5-480a-a678-d2aba4e172ba
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 90245c4f-0901-4eed-a7eb-f77b84ed5369
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/UzplvFoCSAGWBCt9lzQ5jQ-IMG_4977.jpeg
+                      type: text
+                    file:
+                      type: file
+                      value: 96dceb7f-1858-4331-9a7a-86a970599980
+                    size:
+                      value: 3470231
+                      type: number
+                    title:
+                      type: text
+                      value: Mountain ridge and forest
+                    width:
+                      value: 4032
+                      type: number
+                    height:
+                      value: 3024
+                      type: number
+                    mediaType:
+                      value: image/jpeg
+                      type: text
+                    focalPoint:
+                      value:
+                        x: 0.51
+                        'y': 0.51
+                      type: focalPoint
+                    description:
+                      type: text
+                      value: >-
+                        A wide view of layered mountain ridges above a dense
+                        evergreen forest, with autumn-colored foliage in the
+                        foreground and a pale blue sky overhead.
+                  _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/title/value}
+          caption:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/imageAttribution/value}
+          summary:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/subtitle/value}
+          category:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/articleCategories/value/0}
+          thumbnail:
+            type: asset
+            locales:
+              en-US:
+                - _id: a99a3e15-f46f-4dc6-98bd-6dc318806b47
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 5bc1490f-55bb-449b-921a-8a5eea585757
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/BOZUxeB3QFSqaKZKLPwC1A-IMG_4960.jpeg
+                      type: text
+                    file:
+                      type: file
+                      value: e1d7798c-d85b-4e55-bac9-32cc5752bb1b
+                    size:
+                      value: 5934644
+                      type: number
+                    title:
+                      type: text
+                      value: Joshua trees and mountain landscape
+                    width:
+                      value: 5712
+                      type: number
+                    height:
+                      value: 4284
+                      type: number
+                    mediaType:
+                      value: image/jpeg
+                      type: text
+                    focalPoint:
+                      value:
+                        x: 0.5
+                        'y': 0.62
+                      type: focalPoint
+                    description:
+                      type: text
+                      value: >-
+                        A wide mountain landscape beneath a bright blue sky with
+                        wispy clouds, layered ridges, and distinctive Joshua
+                        trees rising from a dense forested foreground.
+                  _source: uniform-assets
+          authorName:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/author/value/entry/_name}
+          authorRole:
+            type: text
+            locales:
+              en-US: >-
+                ${#jptr:/Article
+                Content/entry/fields/author/value/entry/fields/title/value}
+          publishDate:
+            type: date
+            locales:
+              en-US: ${#jptr:/Article Content/entry/fields/publishDate/value}
+  _dataResources:
+    Article Content:
+      type: articleBySlug
+      variables:
+        slug: ${article-url}
+        locale: ${locale}
+        entryId: d5ae9d71-59a0-426c-8eaf-39d0a1e8999a
+  _locales:
+    - en-US
+created: '2026-10-20T21:06:11.70272+00:00'
+modified: '2026-10-21T17:08:57.602976+00:00'
+pattern: false

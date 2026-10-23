@@ -14,30 +14,31 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { formatDate } from "@/app/static/_lib/formatDate";
+import { defaultLocale } from "@/lib/uniform/locale";
 
 interface NewsArticleParameters {
   // Intro
-  title: ComponentParameter<string>;
-  summary: ComponentParameter<string>;
-  category: ComponentParameter<string>;
-  authorName: ComponentParameter<string>;
-  authorRole: ComponentParameter<string>;
+  title?: ComponentParameter<string>;
+  summary?: ComponentParameter<string>;
+  category?: ComponentParameter<string>;
+  authorName?: ComponentParameter<string>;
+  authorRole?: ComponentParameter<string>;
   /** ISO date string, for example "2026-09-14" */
-  publishDate: ComponentParameter<string>;
+  publishDate?: ComponentParameter<string>;
   /** ISO date string. Shown only when set. */
-  updatedDate: ComponentParameter<string>;
-  readTimeMinutes: ComponentParameter<number>;
-  thumbnail: ComponentParameter<AssetParamValue>;
+  updatedDate?: ComponentParameter<string>;
+  readTimeMinutes?: ComponentParameter<number>;
+  thumbnail?: ComponentParameter<AssetParamValue>;
 
   // Hero
-  image: ComponentParameter<AssetParamValue>;
-  caption: ComponentParameter<string>;
-  credit: ComponentParameter<string>;
+  image?: ComponentParameter<AssetParamValue>;
+  caption?: ComponentParameter<string>;
+  credit?: ComponentParameter<string>;
 
   // Body
-  body: ComponentParameter<RichTextParamValue>;
+  body?: ComponentParameter<RichTextParamValue>;
   /** Comma-separated list, for example "hiking, safety, gear". */
-  tags: ComponentParameter<string>;
+  tags?: ComponentParameter<string>;
 }
 
 const initials = (name: string) =>
@@ -88,7 +89,9 @@ export default function NewsArticle({
     tags,
   },
   component,
+  context,
 }: ComponentProps<NewsArticleParameters>) {
+  const newsHref = `/${context.dynamicInputs.locale || defaultLocale}/news`;
   const heroAsset = flattenValues(image?.value, { toSingle: true });
   const heroUrl = heroAsset?.url;
   // Alt text comes from the asset library: description first, then title.
@@ -131,20 +134,24 @@ export default function NewsArticle({
         </div>
         {showCaption && (
           <figcaption className="mt-3 text-sm text-zinc-500">
-            <UniformText
-              parameter={caption}
-              component={component}
-              as="span"
-              placeholder="Caption text here..."
-            />
+            {caption && (
+              <UniformText
+                parameter={caption}
+                component={component}
+                as="span"
+                placeholder="Caption text here..."
+              />
+            )}
             {caption?.value && credit?.value && " "}
-            <UniformText
-              parameter={credit}
-              component={component}
-              as="span"
-              className="text-zinc-400"
-              placeholder="Credit here..."
-            />
+            {credit && (
+              <UniformText
+                parameter={credit}
+                component={component}
+                as="span"
+                className="text-zinc-400"
+                placeholder="Credit here..."
+              />
+            )}
           </figcaption>
         )}
       </figure>
@@ -161,7 +168,7 @@ export default function NewsArticle({
               <ChevronRight className="size-4" />
             </li>
             <li>
-              <Link href="/#news" className={LINK_FOCUS}>
+              <Link href={newsHref} className={LINK_FOCUS}>
                 News
               </Link>
             </li>
@@ -179,27 +186,33 @@ export default function NewsArticle({
 
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div className="min-w-0">
-            <UniformText
-              parameter={category}
-              component={component}
-              as="span"
-              className="mb-4 inline-flex w-fit items-center rounded-full bg-amber-100 px-4 py-1.5 text-sm font-medium text-amber-900"
-              placeholder="Category"
-            />
-            <UniformText
-              parameter={title}
-              component={component}
-              as="h1"
-              className="text-balance text-4xl font-bold text-zinc-900 md:text-5xl"
-              placeholder="Title text here..."
-            />
-            <UniformText
-              parameter={summary}
-              component={component}
-              as="p"
-              className="mt-4 text-pretty text-xl text-zinc-600"
-              placeholder="Summary text here..."
-            />
+            {category && (
+              <UniformText
+                parameter={category}
+                component={component}
+                as="span"
+                className="mb-4 inline-flex w-fit items-center rounded-full bg-amber-100 px-4 py-1.5 text-sm font-medium text-amber-900"
+                placeholder="Category"
+              />
+            )}
+            {title && (
+              <UniformText
+                parameter={title}
+                component={component}
+                as="h1"
+                className="text-balance text-4xl font-bold text-zinc-900 md:text-5xl"
+                placeholder="Title text here..."
+              />
+            )}
+            {summary && (
+              <UniformText
+                parameter={summary}
+                component={component}
+                as="p"
+                className="mt-4 text-pretty text-xl text-zinc-600"
+                placeholder="Summary text here..."
+              />
+            )}
           </div>
           {/* Decorative: the full image with its description is shown at the top of the page */}
           <div className="relative size-28 shrink-0 overflow-hidden rounded-xl bg-zinc-100 sm:size-36">
@@ -225,14 +238,16 @@ export default function NewsArticle({
             </span>
             <p>
               <span className="sr-only">Written by </span>
-              <UniformText
-                parameter={authorName}
-                component={component}
-                as="span"
-                className="block font-medium text-zinc-900"
-                placeholder="Author name"
-              />
-              {showAuthorRole && (
+              {authorName && (
+                <UniformText
+                  parameter={authorName}
+                  component={component}
+                  as="span"
+                  className="block font-medium text-zinc-900"
+                  placeholder="Author name"
+                />
+              )}
+              {authorRole && showAuthorRole && (
                 <UniformText
                   parameter={authorRole}
                   component={component}
@@ -265,12 +280,14 @@ export default function NewsArticle({
       </header>
 
       <div className="mx-auto max-w-5xl px-6 py-10">
-        <UniformRichText
-          parameter={body}
-          component={component}
-          className={RICH_TEXT_CLASSES}
-          placeholder="Article body here..."
-        />
+        {body && (
+          <UniformRichText
+            parameter={body}
+            component={component}
+            className={RICH_TEXT_CLASSES}
+            placeholder="Article body here..."
+          />
+        )}
 
         {tagList.length > 0 && (
           <section aria-labelledby="article-tags" className="mt-12">
@@ -291,7 +308,7 @@ export default function NewsArticle({
         )}
 
         <Link
-          href="/#news"
+          href={newsHref}
           className="mt-10 inline-flex items-center gap-2 font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
         >
           <ArrowLeft aria-hidden="true" className="size-4" />

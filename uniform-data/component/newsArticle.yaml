@@ -24,34 +24,41 @@ parameters:
     guidance: Clear, specific news headline.
     typeConfig:
       required: true
+    localizable: true
   - id: summary
     name: Summary
     type: text
     guidance: One or two sentence summary of the article.
     typeConfig:
       required: true
+    localizable: true
   - id: category
     name: Category
     type: text
     guidance: Short category label, 1-2 words.
     typeConfig:
       required: true
+    localizable: true
   - id: authorName
     name: Author Name
     type: text
     typeConfig:
       required: true
+    localizable: true
   - id: authorRole
     name: Author Role
     type: text
+    localizable: true
   - id: publishDate
     name: Publish Date
     type: date
     typeConfig:
       required: true
+    localizable: true
   - id: updatedDate
     name: Updated Date
     type: date
+    localizable: true
   - id: readTimeMinutes
     name: Read Time Minutes
     type: number
@@ -64,6 +71,7 @@ parameters:
       required: true
       allowedTypes:
         - image
+    localizable: true
   - id: heroGroup
     name: Hero
     type: group
@@ -79,12 +87,15 @@ parameters:
       required: true
       allowedTypes:
         - image
+    localizable: true
   - id: caption
     name: Caption
     type: text
+    localizable: true
   - id: credit
     name: Credit
     type: text
+    localizable: true
   - id: bodyGroup
     name: Body
     type: group
@@ -123,21 +134,24 @@ parameters:
           - superscript
           - subscript
       elementsConfig:
+        link:
+          enableAnchor: true
         asset:
           allowedTypes:
             - image
+    localizable: true
   - id: tags
     name: Tags
     type: text
     guidance: 'Comma-separated list of short tags, for example: hiking, safety, gear.'
-categoryId: 2a9fa6af-5c1d-496a-8105-394a87241075
+    localizable: true
 description: >-
-  Full news article page section with hero image, intro, byline, rich text body
+  Full news article section with a hero image, intro, byline, rich text body,
   and tags.
 useTeamPermissions: true
 slots: []
 titleParameter: title
 thumbnailParameter: thumbnail
 canBeComposition: false
-created: '2026-10-08T09:06:10.735349+00:00'
-updated: '2026-10-08T09:08:44.764507+00:00'
+created: '2026-10-20T20:58:15.606874+00:00'
+updated: '2026-10-20T21:02:08.880313+00:00'

@@ -18,13 +18,13 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 interface ImageWithTextParameters {
-  heading: ComponentParameter<string>;
-  subheading: ComponentParameter<string>;
-  image: ComponentParameter<AssetParamValue>;
-  imagePosition: ComponentParameter<"left" | "right">;
-  content: ComponentParameter<RichTextParamValue>;
-  link: ComponentParameter<LinkParamValue>;
-  linkText: ComponentParameter<string>;
+  heading?: ComponentParameter<string>;
+  subheading?: ComponentParameter<string>;
+  image?: ComponentParameter<AssetParamValue>;
+  imagePosition?: ComponentParameter<"left" | "right">;
+  content?: ComponentParameter<RichTextParamValue>;
+  link?: ComponentParameter<LinkParamValue>;
+  linkText?: ComponentParameter<string>;
 }
 
 export default function ImageWithText({
@@ -68,14 +68,16 @@ export default function ImageWithText({
             )}
           </div>
           <div className="flex w-full flex-col justify-center gap-4 p-8 md:w-1/2 md:p-12">
-            <UniformText
-              parameter={heading}
-              component={component}
-              as="h2"
-              className="text-balance text-3xl font-bold text-zinc-900 md:text-4xl"
-              placeholder="Heading text here..."
-            />
-            {showSubheading && (
+            {heading && (
+              <UniformText
+                parameter={heading}
+                component={component}
+                as="h2"
+                className="text-balance text-3xl font-bold text-zinc-900 md:text-4xl"
+                placeholder="Heading text here..."
+              />
+            )}
+            {subheading && showSubheading && (
               <UniformText
                 parameter={subheading}
                 component={component}
@@ -84,23 +86,27 @@ export default function ImageWithText({
                 placeholder="Subheading text here..."
               />
             )}
-            <UniformRichText
-              parameter={content}
-              component={component}
-              className="space-y-4 text-zinc-700"
-              placeholder="Content text here..."
-            />
+            {content && (
+              <UniformRichText
+                parameter={content}
+                component={component}
+                className="space-y-4 text-zinc-700"
+                placeholder="Content text here..."
+              />
+            )}
             {showLink && (
               <Link
                 href={href ?? "#"}
                 className="mt-2 inline-block w-fit font-medium text-blue-700 underline underline-offset-4 hover:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
               >
-                <UniformText
-                  parameter={linkText}
-                  component={component}
-                  as="span"
-                  placeholder="Link text here..."
-                />
+                {linkText && (
+                  <UniformText
+                    parameter={linkText}
+                    component={component}
+                    as="span"
+                    placeholder="Link text here..."
+                  />
+                )}
               </Link>
             )}
           </div>

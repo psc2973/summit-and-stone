@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a27c9e49-6d16-4b9f-818d-f549bf97f937
+  _name: IMG_4959.jpeg
+  fields:
+    title:
+      type: text
+      value: IMG_4959.jpeg
+    file:
+      type: file
+      value: ce60343a-6fc9-4aa2-ad46-dd69ba267e84
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/JjzEFeSXTdC4un7EQb_odQ-IMG_4959.jpeg
+      type: text
+    size:
+      value: 8815256
+      type: number
+    width:
+      value: 8090
+      type: number
+    height:
+      value: 3886
+      type: number
+    custom: {}
+created: '2026-10-21T18:01:18.532844+00:00'
+modified: '2026-10-21T18:01:18.532844+00:00'

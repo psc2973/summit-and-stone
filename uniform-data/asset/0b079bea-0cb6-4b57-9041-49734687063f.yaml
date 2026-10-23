@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 0b079bea-0cb6-4b57-9041-49734687063f
+  _name: Fiery sunset over the ocean
+  fields:
+    title:
+      type: text
+      value: Fiery sunset over the ocean
+    description:
+      type: text
+      value: >-
+        A vivid red and orange sunset glows beneath dark layered clouds over the
+        ocean, with rippling waves and wet shoreline reflecting the dramatic
+        evening light.
+    file:
+      type: file
+      value: bf8e9f23-3f0c-4cc4-aea5-451739e26195
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/ddQfMo1iRhC1z8aQftyaVw-IMG_3722.jpeg
+      type: text
+    size:
+      value: 2753651
+      type: number
+    width:
+      value: 4032
+      type: number
+    height:
+      value: 3024
+      type: number
+    focalPoint:
+      value:
+        x: 0.67
+        'y': 0.42
+      type: focalPoint
+    custom: {}
+created: '2026-10-20T20:50:43.923308+00:00'
+modified: '2026-10-20T20:50:43.923308+00:00'

@@ -1,0 +1,217 @@
+created: '2026-10-20T20:39:01.851072+00:00'
+modified: '2026-10-20T20:50:44.380913+00:00'
+pattern: false
+entry:
+  _id: d5ae9d71-59a0-426c-8eaf-39d0a1e8999a
+  _name: How to Plan Your First Alpine Sunrise Hike
+  _slug: how-to-plan-your-first-alpine-sunrise-hike
+  _thumbnail: >-
+    https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/ddQfMo1iRhC1z8aQftyaVw-IMG_3722.jpeg
+  type: article
+  fields:
+    image:
+      type: asset
+      locales:
+        en-US:
+          - _id: 66ee4044-676c-4145-bff7-ce01a682c99d
+            type: image
+            fields:
+              id:
+                type: text
+                value: 0b079bea-0cb6-4b57-9041-49734687063f
+              url:
+                value: >-
+                  https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/ddQfMo1iRhC1z8aQftyaVw-IMG_3722.jpeg
+                type: text
+              size:
+                value: 2753651
+                type: number
+              title:
+                type: text
+                value: Fiery sunset over the ocean
+              width:
+                value: 4032
+                type: number
+              height:
+                value: 3024
+                type: number
+              mediaType:
+                value: image/jpeg
+                type: text
+              focalPoint:
+                value:
+                  x: 0.67
+                  'y': 0.42
+                type: focalPoint
+              description:
+                type: text
+                value: >-
+                  A vivid red and orange sunset glows beneath dark layered
+                  clouds over the ocean, with rippling waves and wet shoreline
+                  reflecting the dramatic evening light.
+              file:
+                type: file
+                value: bf8e9f23-3f0c-4cc4-aea5-451739e26195
+            _source: uniform-assets
+    title:
+      type: text
+      locales:
+        en-US: How to Plan Your First Alpine Sunrise Hike
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-d5ae9d71-59a0-426c-8eaf-39d0a1e8999a-author/entries/0}
+    content:
+      type: richText
+      locales:
+        en-US:
+          root:
+            type: root
+            version: 1
+            children:
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      A sunrise hike is simple in theory: walk uphill in the
+                      dark, arrive as the sky turns pink. In practice, a little
+                      planning is the difference between a magical morning and a
+                      cold, tired one.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h2
+                type: heading
+                version: 1
+                children:
+                  - text: Pick a trail you already know
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Choose a route you have hiked in daylight. Knowing where
+                      the trail forks, where it gets rocky and how long it takes
+                      removes most of the stress of moving in the dark.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h2
+                type: heading
+                version: 1
+                children:
+                  - text: Pack for the summit, not the trailhead
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      It is warm while you climb and surprisingly cold when you
+                      stop. Bring the following and you will be comfortable
+                      while you wait for the sun:
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: ul
+                type: list
+                start: 1
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    version: 1
+                    children:
+                      - text: An insulated layer and a windproof shell
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 2
+                    version: 1
+                    children:
+                      - text: A hat and gloves, even in summer
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 3
+                    version: 1
+                    children:
+                      - text: A headlamp with spare batteries
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 4
+                    version: 1
+                    children:
+                      - text: A thermos of something hot
+                        type: text
+                        format: 0
+                        version: 1
+                listType: bullet
+              - type: quote
+                version: 1
+                children:
+                  - type: paragraph
+                    version: 1
+                    children:
+                      - text: >-
+                          The summit is optional. Getting back down safely is
+                          not.
+                        type: text
+                        format: 2
+                        version: 1
+                    textFormat: 2
+              - tag: h2
+                type: heading
+                version: 1
+                children:
+                  - text: Leave early, and leave a plan
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Aim to reach the top thirty minutes before sunrise. Tell
+                      someone where you are going and when you expect to be
+                      back, then enjoy the view.
+                    type: text
+                    format: 0
+                    version: 1
+    readTime:
+      type: text
+      locales:
+        en-US: 5 min read
+    subtitle:
+      type: text
+      locales:
+        en-US: >-
+          Start before the stars fade and you will walk into one of the best
+          views of your life. Here is how to prepare.
+    publishDate:
+      type: date
+      value: '2026-09-14'
+    imageAttribution:
+      type: text
+      locales:
+        en-US: Beach photo
+    articleCategories:
+      type: multi-select
+      value:
+        - hiking
+        - sunrise
+        - beginner
+  _dataResources:
+    ref-d5ae9d71-59a0-426c-8eaf-39d0a1e8999a-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 68c02217-e243-4b7d-8329-b57119860257
+  _locales:
+    - en-US

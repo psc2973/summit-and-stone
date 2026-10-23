@@ -1,0 +1,19 @@
+created: '2026-10-20T20:47:56.148846+00:00'
+modified: '2026-10-20T21:42:04.453227+00:00'
+pattern: false
+entry:
+  _id: 68c02217-e243-4b7d-8329-b57119860257
+  _name: Maya Torres
+  _slug: maya-torres
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        en-US: Maya Torres
+    title:
+      type: text
+      locales:
+        en-US: Trail Editor
+  _locales:
+    - en-US

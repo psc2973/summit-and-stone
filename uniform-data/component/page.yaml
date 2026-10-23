@@ -2,9 +2,9 @@
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: page
 name: Page
-icon: template
+icon: card
 parameters: []
-categoryId: e6f6fa95-da48-44fb-b7e0-674a16965a97
+categoryId: acbe05d9-3a6e-43a2-92f2-28d5a7222ae3
 useTeamPermissions: true
 slots:
   - id: header
@@ -21,9 +21,9 @@ slots:
       - imageWithText
       - cardGrid
       - newsArticle
-      - $loop
-      - trailList
       - trailSystem
+      - $loop
+      - trailActivity
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
@@ -34,5 +34,5 @@ slots:
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: true
-created: '2026-10-05T11:01:26.55834+00:00'
-updated: '2026-10-19T11:13:49.570562+00:00'
+created: '2026-10-16T19:12:27.442701+00:00'
+updated: '2026-10-22T15:26:39.378612+00:00'

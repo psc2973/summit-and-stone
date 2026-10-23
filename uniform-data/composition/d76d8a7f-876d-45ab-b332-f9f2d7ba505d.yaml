@@ -1,0 +1,44 @@
+composition:
+  _name: News
+  _id: d76d8a7f-876d-45ab-b332-f9f2d7ba505d
+  type: page
+  slots:
+    content:
+      - _id: 9bbbbeb7-d9a0-435f-b502-2ee83a34faae
+        type: cardGrid
+        _pattern: 51277d3f-5dac-4fd6-abeb-c206d9e46d01
+  _overrides:
+    9bbbbeb7-d9a0-435f-b502-2ee83a34faae:
+      parameters:
+        link:
+          type: link
+          locales:
+            en-US:
+              path: ''
+              type: url
+        eyebrow:
+          type: text
+          locales:
+            en-US: News
+        heading:
+          type: text
+          locales:
+            en-US: News articles
+      dataResources:
+        Article List Content:
+          type: articleList
+          variables:
+            limit: ''
+            locale: ${locale}
+            offset: ''
+            search: ''
+            filters: '{"type[eq]":"article"}'
+            orderBy: updated_at_DESC
+            uiFilters: '[{"field":"type","operator":"eq","value":"article"}]'
+  _overridability:
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2026-10-22T17:18:15.857071+00:00'
+modified: '2026-10-22T17:20:00.576255+00:00'
+pattern: false

@@ -1,14 +1,16 @@
 id: trailSystems
 displayName: trail-systems
-created: '2026-10-19T10:43:28.464929+00:00'
-modified: '2026-10-19T10:43:28.464929+00:00'
-createdBy: google-oauth2|118138255479849584814
+created: '2026-10-21T18:41:48.433268+00:00'
+modified: '2026-10-22T13:27:36.414759+00:00'
+createdBy: google-oauth2|117609956831366283522
+modifiedBy: google-oauth2|117609956831366283522
 ttl: 30
+body: ''
 path: /trail-systems
 custom:
   proposedName: trail-systems
 method: GET
-purgeKey: 33c46a87-65cb-4f54-a883-9ab31c0c7579
+purgeKey: 6ef6a201-353b-4691-b48b-dc1508802ae7
 archetype: default
-dataSourceId: trailhubTrailSystems
+dataSourceId: trailhubtrails
 allowedOnComponents: []

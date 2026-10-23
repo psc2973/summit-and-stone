@@ -14,7 +14,10 @@ import NewsArticle from "./NewsArticle";
 import Page from "./Page";
 import TrailActivity from "./TrailActivity";
 import TrailList from "./TrailList";
-import TrailSystem from "./TrailSystem";
+import TrailSystem, {
+  createTrailSystem,
+  loopIndexForTrailSystem,
+} from "./TrailSystem";
 
 const componentMap: Record<string, ResolveComponentResult["component"]> = {
   page: Page,
@@ -37,6 +40,16 @@ const NotFoundComponent = ({ type }: ComponentProps) => (
   </div>
 );
 
-export const resolveComponent: ResolveComponentFunction = ({ component }) => ({
-  component: componentMap[component.type] ?? NotFoundComponent,
-});
+export const resolveComponent: ResolveComponentFunction = ({ component }) => {
+  // The loop repeats Trail System in list order. The index lets each card
+  // hide itself past numberOfTrailSystems. The map entry stays registered.
+  if (component.type === "trailSystem") {
+    return {
+      component: createTrailSystem(loopIndexForTrailSystem(component)),
+    };
+  }
+
+  return {
+    component: componentMap[component.type] ?? NotFoundComponent,
+  };
+};

@@ -1,0 +1,9 @@
+id: ebd70eca-42bc-4c30-a379-51bc3456f2c5
+name: News
+order: 600
+path: /:locale/news
+type: composition
+pathSegment: news
+data: {}
+compositionId: d76d8a7f-876d-45ab-b332-f9f2d7ba505d
+projectMapId: f2575263-3234-44de-86f1-b8dda404e3a6

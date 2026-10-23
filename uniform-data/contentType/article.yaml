@@ -1,9 +1,13 @@
 id: article
 name: Article
-created: '2026-10-08T08:18:21.475527+00:00'
-updated: '2026-10-08T09:53:44.744182+00:00'
+created: '2026-10-20T20:31:44.920062+00:00'
+updated: '2026-10-21T17:04:43.674414+00:00'
 useTeamPermissions: true
-slugSettings: {}
+slugSettings:
+  unique: 'no'
+  required: 'no'
+  regularExpression: ''
+  regularExpressionMessage: ''
 fields:
   - id: title
     name: Title
@@ -30,7 +34,7 @@ fields:
     typeConfig: null
     localizable: true
   - id: author
-    name: Author
+    name: author
     type: contentReference
     typeConfig:
       allowedContentTypes:
@@ -86,7 +90,7 @@ fields:
           value: hiking
         - text: Sunrise
           value: sunrise
-        - text: Beginner
+        - text: Begginer
           value: beginner
 entryName: title
 thumbnailField: image
@@ -95,8 +99,8 @@ type: contentType
 permissions: []
 previewConfigurations:
   - type: project-map
-    id: cc96d630-71db-49ca-884b-c458575e1758
-    label: Article Detail
+    id: 9edba280-2eeb-4853-9b42-383bf5eb1a53
+    label: Article Detail Preview
     dynamicInputs:
       locale: ${locale}
       article-url: ${#jptr:/entry/_slug}

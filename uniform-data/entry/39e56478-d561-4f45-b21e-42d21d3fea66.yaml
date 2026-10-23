@@ -1,0 +1,362 @@
+created: '2026-10-21T17:28:36.309586+00:00'
+modified: '2026-10-21T17:32:18.931309+00:00'
+pattern: false
+entry:
+  _id: 39e56478-d561-4f45-b21e-42d21d3fea66
+  _name: The 4000 Footers of New Hampshire
+  _slug: the-4000-footers-of-new-hampshire
+  _thumbnail: >-
+    https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/dNieXOp4Rc2t1DZuLFJirA-IMG_4959.jpeg
+  type: article
+  fields:
+    image:
+      type: asset
+      locales:
+        en-US:
+          - _id: 2f0af945-d642-40cd-9232-9867b2bd9bcd
+            type: image
+            fields:
+              id:
+                type: text
+                value: 9dbc1867-8d82-43f3-ab72-b434f0b18e42
+              url:
+                value: >-
+                  https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/dNieXOp4Rc2t1DZuLFJirA-IMG_4959.jpeg
+                type: text
+              size:
+                value: 8815256
+                type: number
+              title:
+                type: text
+                value: IMG_4959.jpeg
+              width:
+                value: 8090
+                type: number
+              height:
+                value: 3886
+                type: number
+              mediaType:
+                value: image/jpeg
+                type: text
+              file:
+                type: file
+                value: 6ccaaf53-d0e3-4d6f-94a2-96eab42a965d
+            _source: uniform-assets
+    title:
+      type: text
+      locales:
+        en-US: The 4000 Footers of New Hampshire
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-39e56478-d561-4f45-b21e-42d21d3fea66-author/entries/0}
+    content:
+      type: richText
+      locales:
+        en-US:
+          root:
+            type: root
+            version: 1
+            children:
+              - tag: h2
+                type: heading
+                version: 1
+                children:
+                  - text: Hiking the Lincoln–Lafayette Loop
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      The Lincoln–Lafayette Loop is one of New Hampshire’s
+                      classic White Mountains hikes: a demanding, above-treeline
+                      circuit that links Little Haystack Mountain, Mount
+                      Lincoln, and Mount Lafayette along the spectacular
+                      Franconia Ridge. With wide-open views, rugged alpine
+                      terrain, and two New Hampshire 4,000-footers, it is a
+                      memorable objective for hikers who are prepared for a full
+                      mountain day.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: The Route at a Glance
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Most hikers begin at the Franconia Notch trailhead and
+                      travel clockwise, climbing the Falling Waters Trail to
+                      Little Haystack before following the Franconia Ridge Trail
+                      over Mount Lincoln and Mount Lafayette. The return
+                      descends the Greenleaf Trail and Old Bridle Path. The loop
+                      is roughly 8.5 to 9 miles, with about 3,900 feet of
+                      elevation gain, and commonly takes six to nine hours
+                      depending on conditions, pace, and time spent enjoying the
+                      ridge.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: 'The Climb: Falling Waters Trail'
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      The Falling Waters Trail provides a beautiful but steep
+                      approach to the ridge. Its lower miles follow a lively
+                      brook and pass a series of waterfalls, making the ascent
+                      feel especially rewarding in warm weather. The footing
+                      becomes progressively rougher and steeper, with rock
+                      steps, roots, and wet slabs that can be slippery after
+                      rain.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Take your time on this section. Trekking poles can be
+                      useful on the descent, but hikers should still be
+                      comfortable scrambling over uneven terrain. As the forest
+                      thins near Little Haystack, the trail suddenly opens into
+                      the alpine zone and offers the first sweeping views across
+                      Franconia Notch.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: Across Franconia Ridge
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      From Little Haystack, the hike becomes an unforgettable
+                      ridge walk. The Franconia Ridge Trail rolls north across
+                      exposed alpine terrain, with Mount Lincoln rising to 5,089
+                      feet and Mount Lafayette reaching 5,260 feet. On a clear
+                      day, the views extend toward the Pemigewasset Wilderness,
+                      the Bonds, the Kinsmans, Cannon Mountain, and distant
+                      Vermont peaks.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Mount Lincoln is a short side trip from the main ridge
+                      trail and is well worth the few extra minutes. From its
+                      summit, the trail continues north toward Mount Lafayette,
+                      passing through one of the most scenic stretches of high
+                      country in the Northeast. The landscape is fragile: stay
+                      on the designated trail, avoid stepping on alpine
+                      vegetation, and keep pets and groups on durable surfaces.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: The Descent from Mount Lafayette
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      After reaching Mount Lafayette, follow the Greenleaf Trail
+                      toward Greenleaf Hut. The descent begins with broad views
+                      over Franconia Notch before dropping into more sheltered
+                      terrain. Greenleaf Hut can be a useful place to pause,
+                      refill water when available, or take shelter during
+                      changing weather.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      From the hut, continue down Old Bridle Path to complete
+                      the loop. Although the grade is generally more moderate
+                      than Falling Waters, tired legs may find the rocky trail
+                      deceptively challenging. Leave enough energy, daylight,
+                      food, and water for this final stretch.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: When to Go
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Summer and early fall are the most popular seasons for the
+                      loop, but conditions on the ridge can be dramatically
+                      different from those at the trailhead. Wind, fog,
+                      thunderstorms, and cold temperatures can arrive quickly.
+                      Early autumn often brings crisp air and colorful foliage,
+                      while winter turns the route into a serious mountaineering
+                      objective requiring experience with snow, ice, navigation,
+                      and severe weather.
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: What to Bring
+                    type: text
+                    format: 0
+                    version: 1
+              - tag: ul
+                type: list
+                start: 1
+                version: 1
+                children:
+                  - type: listitem
+                    value: 1
+                    version: 1
+                    children:
+                      - text: >-
+                          Sturdy hiking boots or trail shoes with dependable
+                          traction
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 2
+                    version: 1
+                    children:
+                      - text: Layers for wind and cold, including a waterproof shell
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 3
+                    version: 1
+                    children:
+                      - text: Plenty of water, high-energy food, and electrolytes
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 4
+                    version: 1
+                    children:
+                      - text: A map, navigation tools, headlamp, and a charged phone
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 5
+                    version: 1
+                    children:
+                      - text: Sun protection, even on cool days
+                        type: text
+                        format: 0
+                        version: 1
+                  - type: listitem
+                    value: 6
+                    version: 1
+                    children:
+                      - text: >-
+                          Extra insulation and emergency supplies for exposed
+                          conditions
+                        type: text
+                        format: 0
+                        version: 1
+                listType: bullet
+              - tag: h3
+                type: heading
+                version: 1
+                children:
+                  - text: Plan for the Weather
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      The Franconia Ridge is famous for its views, but it is
+                      also fully exposed. Check the higher-summit forecast
+                      before leaving, start early, and turn around if
+                      thunderstorms, high winds, or poor visibility are
+                      expected. There is little protection from lightning once
+                      above treeline, and a safe retreat is always more
+                      important than reaching a summit.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      For hikers ready for a sustained climb and a long day on
+                      their feet, the Lincoln–Lafayette Loop delivers a
+                      quintessential White Mountains experience: waterfalls in
+                      the forest, airy ridge walking, and a summit-to-summit
+                      panorama that makes every steep mile worthwhile.
+                    type: text
+                    format: 0
+                    version: 1
+    readTime:
+      type: text
+      locales:
+        en-US: '3'
+    subtitle:
+      type: text
+      locales:
+        en-US: >-
+          A guide to New Hampshire’s highest peaks and the trails that lead to
+          them
+    publishDate:
+      type: date
+      value: '2026-10-08'
+    imageAttribution:
+      type: text
+      locales:
+        en-US: Pat and Scott hike
+    articleCategories:
+      type: multi-select
+      value:
+        - hiking
+  _dataResources:
+    ref-39e56478-d561-4f45-b21e-42d21d3fea66-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 55bd9e3b-1f0c-47f6-94ac-c98e6e4e68a8
+  _locales:
+    - en-US

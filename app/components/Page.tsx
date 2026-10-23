@@ -8,7 +8,10 @@ import NavBar from "./NavBar";
 
 type PageSlots = "content";
 
-export default function Page({ slots }: ComponentProps<unknown, PageSlots>) {
+export default function Page({
+  slots,
+  context,
+}: ComponentProps<unknown, PageSlots>) {
   return (
     <div className="flex min-h-screen flex-col">
       <a
@@ -17,7 +20,10 @@ export default function Page({ slots }: ComponentProps<unknown, PageSlots>) {
       >
         Skip to content
       </a>
-      <NavBar />
+      <NavBar
+        locale={context.dynamicInputs.locale}
+        matchedRoute={context.matchedRoute}
+      />
       <main id="main" className="flex-1">
         <UniformSlot slot={slots.content} />
       </main>

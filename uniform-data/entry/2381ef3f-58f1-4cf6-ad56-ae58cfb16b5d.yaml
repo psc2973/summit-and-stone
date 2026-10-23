@@ -1,0 +1,168 @@
+created: '2026-10-21T18:05:31.456664+00:00'
+modified: '2026-10-21T18:08:23.415238+00:00'
+pattern: false
+entry:
+  _id: 2381ef3f-58f1-4cf6-ad56-ae58cfb16b5d
+  _name: Mt. Washington Hike
+  _slug: mt-washington-hike
+  _thumbnail: >-
+    https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/XjZpinI7SjGLXj4mSD8vCQ-IMG_4814.jpeg
+  type: article
+  fields:
+    image:
+      type: asset
+      locales:
+        en-US:
+          - _id: c16356ea-fa87-4a49-9bc2-ad15e3af3392
+            type: image
+            fields:
+              id:
+                type: text
+                value: 9093b7a2-5cdd-44ed-9f09-53df544600fc
+              url:
+                value: >-
+                  https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/XjZpinI7SjGLXj4mSD8vCQ-IMG_4814.jpeg
+                type: text
+              size:
+                value: 2680420
+                type: number
+              title:
+                type: text
+                value: Mountain panorama beneath a cloudy sky
+              width:
+                value: 4032
+                type: number
+              height:
+                value: 3024
+                type: number
+              mediaType:
+                value: image/jpeg
+                type: text
+              focalPoint:
+                value:
+                  x: 0.67
+                  'y': 0.72
+                type: focalPoint
+              description:
+                type: text
+                value: >-
+                  A wide mountain panorama stretches beneath layered blue-gray
+                  clouds, with rugged peaks, evergreen forests, rocky alpine
+                  terrain, and a valley visible in the distance.
+              file:
+                type: file
+                value: dd3c464e-135e-4b73-ae21-85d573b5bf1b
+            _source: uniform-assets
+    title:
+      type: text
+      locales:
+        en-US: Mt. Washington Hike
+    author:
+      type: contentReference
+      value: ${#jptr:/ref-2381ef3f-58f1-4cf6-ad56-ae58cfb16b5d-author/entries/0}
+    content:
+      type: richText
+      locales:
+        en-US:
+          root:
+            type: root
+            version: 1
+            children:
+              - tag: h2
+                type: heading
+                version: 1
+                children:
+                  - text: Hiking to the Top of Mt. Washington
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      A hike to the summit of Mt. Washington is an unforgettable
+                      White Mountains adventure, combining steep trails,
+                      dramatic alpine scenery, and rapidly changing weather. At
+                      6,288 feet, it is the highest peak in the Northeast—and a
+                      destination that rewards careful preparation.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Many hikers begin from Pinkham Notch and follow the
+                      Tuckerman Ravine Trail, a popular route that climbs
+                      through forest before opening into the rugged terrain of
+                      Tuckerman Ravine. From there, the trail grows steeper as
+                      it ascends toward the Alpine Garden and the summit cone.
+                      Expect rock scrambles, uneven footing, and long stretches
+                      exposed to wind and weather above tree line.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      As you climb, pause to take in views of neighboring
+                      Presidential Range peaks, deep valleys, and distant
+                      ridgelines. The final approach brings you to the busy
+                      summit area, where you can visit the Mt. Washington
+                      Observatory, check the famous weather report, and enjoy a
+                      well-earned break before beginning the descent.
+                    type: text
+                    format: 0
+                    version: 1
+              - type: quote
+                version: 1
+                children:
+                  - type: paragraph
+                    version: 1
+                    children:
+                      - text: >-
+                          Bring warm layers, rain protection, extra food and
+                          water, a map, and sturdy hiking footwear. Conditions
+                          can change quickly on Mt. Washington, even in summer.
+                        type: text
+                        format: 0
+                        version: 1
+              - type: paragraph
+                version: 1
+                children:
+                  - text: >-
+                      Plan for a full day, start early, and be ready to turn
+                      around if the weather deteriorates. With preparation,
+                      patience, and respect for the mountain, the journey to the
+                      top of Mt. Washington is a challenging and memorable hike.
+                    type: text
+                    format: 0
+                    version: 1
+    readTime:
+      type: text
+      locales:
+        en-US: '4'
+    subtitle:
+      type: text
+      locales:
+        en-US: A guide to hiking Mt. Washington
+    publishDate:
+      type: date
+      value: '2026-10-21'
+    imageAttribution:
+      type: text
+      locales:
+        en-US: Trip to NH
+    articleCategories:
+      type: multi-select
+      value:
+        - hiking
+  _dataResources:
+    ref-2381ef3f-58f1-4cf6-ad56-ae58cfb16b5d-author:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 55bd9e3b-1f0c-47f6-94ac-c98e6e4e68a8
+  _locales:
+    - en-US

@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: af1f6d76-29dd-4f70-94a4-afbe23cc3240
+  _name: Mountain landscape beneath a blue sky
+  fields:
+    title:
+      type: text
+      value: Mountain landscape beneath a blue sky
+    description:
+      type: text
+      value: >-
+        A panoramic mountain landscape stretches beneath a bright blue sky with
+        wispy white clouds. Layered forested ridges fill the lower portion of
+        the scene, with evergreen branches framing the foreground.
+    file:
+      type: file
+      value: 729a9c07-f66a-4da6-9c14-e850e4cfb4c7
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/otbyiVJqQhO4s_3nN-VepQ-IMG_5007.jpeg
+      type: text
+    size:
+      value: 7194156
+      type: number
+    width:
+      value: 4284
+      type: number
+    height:
+      value: 5712
+      type: number
+    focalPoint:
+      value:
+        x: 0.72
+        'y': 0.67
+      type: focalPoint
+    custom: {}
+created: '2026-10-19T19:57:52.743423+00:00'
+modified: '2026-10-19T19:57:52.743423+00:00'

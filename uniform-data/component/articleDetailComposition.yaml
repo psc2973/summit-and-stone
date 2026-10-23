@@ -30,6 +30,11 @@ slots:
     allowAllComponents: true
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
+slugSettings:
+  unique: 'no'
+  required: 'yes'
+  regularExpression: ''
+  regularExpressionMessage: ''
 canBeComposition: true
-created: '2026-10-08T09:10:50.974956+00:00'
-updated: '2026-10-08T09:10:50.974956+00:00'
+created: '2026-10-20T21:04:56.442645+00:00'
+updated: '2026-10-21T15:34:26.271517+00:00'

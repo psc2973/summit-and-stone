@@ -1,0 +1,567 @@
+composition:
+  _name: Home
+  _id: d1fda85a-f22a-4245-9752-b0cf67f0d0e9
+  _slug: ':locale'
+  type: page
+  slots:
+    content:
+      - _id: f4dc3141-7ed3-4efc-8e3f-bed6965f55ae
+        type: heroSection
+        parameters:
+          image:
+            type: asset
+            locales:
+              en-US:
+                - _id: 648a57ab-073b-48bb-b68d-28d3901db23d
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: 90245c4f-0901-4eed-a7eb-f77b84ed5369
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/UzplvFoCSAGWBCt9lzQ5jQ-IMG_4977.jpeg
+                      type: text
+                    file:
+                      type: file
+                      value: 96dceb7f-1858-4331-9a7a-86a970599980
+                    size:
+                      value: 3470231
+                      type: number
+                    title:
+                      type: text
+                      value: Mountain ridge and forest
+                    width:
+                      value: 4032
+                      type: number
+                    height:
+                      value: 3024
+                      type: number
+                    mediaType:
+                      value: image/jpeg
+                      type: text
+                    focalPoint:
+                      value:
+                        x: 0.51
+                        'y': 0.51
+                      type: focalPoint
+                    description:
+                      type: text
+                      value: >-
+                        A wide view of layered mountain ridges above a dense
+                        evergreen forest, with autumn-colored foliage in the
+                        foreground and a pale blue sky overhead.
+                  _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Explore the Mountains
+          subtitle:
+            type: text
+            locales:
+              en-US: Adventure awaits beyond every ridge.
+      - _id: b40e2d3d-77b4-4756-b01f-5dd683bcd63b
+        type: imageWithText
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 410b6fea-c620-4367-ae79-66821157510b
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: fe24a1ba-2790-45f9-9b88-bf0230366fcf
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/eb2CEmasTh-59PYXKj9nFQ-photo-1551632811-561732d1e306
+                    type: text
+                  file:
+                    type: file
+                    value: 070578f2-963d-4bd3-a5bf-51217bb2f654
+                  size:
+                    value: 547329
+                    type: number
+                  title:
+                    type: text
+                    value: Hikers on a mountain trail
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 1068
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                  focalPoint:
+                    value:
+                      x: 0.68
+                      'y': 0.61
+                    type: focalPoint
+                  description:
+                    type: text
+                    value: Hikers walking along a mountain trail beneath snowy peaks
+                _source: uniform-assets
+          content:
+            type: richText
+            locales:
+              en-US:
+                root:
+                  type: root
+                  version: 1
+                  children:
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            Every product spends a season in the field before it
+                            reaches our shelves. Our testers log hundreds of
+                            miles in rain, wind and sun, then tell us exactly
+                            what to fix.
+                          type: text
+                          format: 0
+                          version: 1
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            The result is gear you can rely on when the weather
+                            turns and the trail gets long.
+                          type: text
+                          format: 0
+                          version: 1
+          heading:
+            type: text
+            locales:
+              en-US: Gear that goes the distance
+          subheading:
+            type: text
+            locales:
+              en-US: Tested by guides, trusted by weekend wanderers
+          imagePosition:
+            type: select
+            value: left
+      - _id: da233092-7af6-4d5d-89bd-8e5a7202c5da
+        type: contentBlock
+        parameters:
+          link:
+            type: link
+            locales:
+              en-US:
+                path: /${locale}/hiking-section
+                type: projectMapNode
+                nodeId: b3e9f3a7-a5f6-4ea2-8dd6-067c296409cf
+                projectMapId: f2575263-3234-44de-86f1-b8dda404e3a6
+                dynamicInputValues:
+                  locale: ${locale}
+          content:
+            type: richText
+            locales:
+              en-US:
+                root:
+                  type: root
+                  version: 1
+                  children:
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            Summit & Stone started with two friends, one
+                            borrowed tent and a forecast that turned out to be
+                            wrong. We learned quickly which gear earns its place
+                            in your pack and which stays at home.
+                          type: text
+                          format: 0
+                          version: 1
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            Today we design and test equipment for hikers,
+                            climbers and cyclists who care about quality,
+                            repairability and the places we all love to explore.
+                          type: text
+                          format: 0
+                          version: 1
+          heading:
+            type: text
+            locales:
+              en-US: Built for the trail ahead
+          linkText:
+            type: text
+            locales:
+              en-US: Read more
+      - _id: 5876d01a-60d6-4616-a06a-a554eaa88c0a
+        type: imageWithText
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 6a2bd68d-9a0d-48d4-aff7-9fd6bbf7df5b
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: af1f6d76-29dd-4f70-94a4-afbe23cc3240
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/otbyiVJqQhO4s_3nN-VepQ-IMG_5007.jpeg
+                    type: text
+                  file:
+                    type: file
+                    value: 729a9c07-f66a-4da6-9c14-e850e4cfb4c7
+                  size:
+                    value: 7194156
+                    type: number
+                  title:
+                    type: text
+                    value: Mountain landscape beneath a blue sky
+                  width:
+                    value: 4284
+                    type: number
+                  height:
+                    value: 5712
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                  focalPoint:
+                    value:
+                      x: 0.72
+                      'y': 0.67
+                    type: focalPoint
+                  description:
+                    type: text
+                    value: >-
+                      A panoramic mountain landscape stretches beneath a bright
+                      blue sky with wispy white clouds. Layered forested ridges
+                      fill the lower portion of the scene, with evergreen
+                      branches framing the foreground.
+                _source: uniform-assets
+          content:
+            type: richText
+            locales:
+              en-US:
+                root:
+                  type: root
+                  version: 1
+                  children:
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            Every product spends a season in the field before it
+                            reaches our shelves. Our testers log hundreds of
+                            miles through rain, wind, and sun—then tell us
+                            exactly what to improve.
+                          type: text
+                          format: 0
+                          version: 1
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            The result is dependable gear built to keep going
+                            when the weather shifts, the trail stretches on, and
+                            your next adventure calls.
+                          type: text
+                          format: 0
+                          version: 1
+          heading:
+            type: text
+            locales:
+              en-US: Ready for your next adventure
+          subheading:
+            type: text
+            locales:
+              en-US: Built for the journey, wherever the trail leads.
+          imagePosition:
+            type: select
+            value: right
+      - _id: 05ea65d4-fb5b-4222-ac1d-bee7076b496b
+        type: cardGrid
+        slots:
+          cards:
+            - _id: 162969ba-5cf1-4b38-a016-f7c417d72448
+              type: linkCard
+              parameters:
+                link:
+                  type: link
+                  locales:
+                    en-US:
+                      path: /en-US
+                      type: url
+                image:
+                  type: asset
+                  value:
+                    - _id: 7fe47468-bfff-4615-8f3d-75b8d65c53b5
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: fe24a1ba-2790-45f9-9b88-bf0230366fcf
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/eb2CEmasTh-59PYXKj9nFQ-photo-1551632811-561732d1e306
+                          type: text
+                        file:
+                          type: file
+                          value: 070578f2-963d-4bd3-a5bf-51217bb2f654
+                        size:
+                          value: 547329
+                          type: number
+                        title:
+                          type: text
+                          value: Hikers on a mountain trail
+                        width:
+                          value: 1600
+                          type: number
+                        height:
+                          value: 1068
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                        focalPoint:
+                          value:
+                            x: 0.68
+                            'y': 0.61
+                          type: focalPoint
+                        description:
+                          type: text
+                          value: >-
+                            Hikers walking along a mountain trail beneath snowy
+                            peaks
+                      _source: uniform-assets
+                title:
+                  type: text
+                  locales:
+                    en-US: Alpine sunrise hike
+                showArrow:
+                  type: checkbox
+                  value: 'true'
+                imageRatio:
+                  type: select
+                  value: standard
+                description:
+                  type: text
+                  locales:
+                    en-US: Start before dawn and watch the light hit the high ridges.
+                hoverEffect:
+                  type: select
+                  value: zoom
+                showDescription:
+                  type: checkbox
+                  value: 'true'
+            - _id: 2435ec09-254f-4d0f-96ef-da58fff533c8
+              type: linkCard
+              parameters:
+                link:
+                  type: link
+                  locales:
+                    en-US:
+                      path: /en-US
+                      type: url
+                image:
+                  type: asset
+                  value:
+                    - _id: 968f7e59-83da-4712-8d18-9c7569aa8dee
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 90245c4f-0901-4eed-a7eb-f77b84ed5369
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/UzplvFoCSAGWBCt9lzQ5jQ-IMG_4977.jpeg
+                          type: text
+                        file:
+                          type: file
+                          value: 96dceb7f-1858-4331-9a7a-86a970599980
+                        size:
+                          value: 3470231
+                          type: number
+                        title:
+                          type: text
+                          value: Mountain ridge and forest
+                        width:
+                          value: 4032
+                          type: number
+                        height:
+                          value: 3024
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                        focalPoint:
+                          value:
+                            x: 0.51
+                            'y': 0.51
+                          type: focalPoint
+                        description:
+                          type: text
+                          value: >-
+                            A wide view of layered mountain ridges above a dense
+                            evergreen forest, with autumn-colored foliage in the
+                            foreground and a pale blue sky overhead.
+                      _source: uniform-assets
+                title:
+                  type: text
+                  locales:
+                    en-US: Forest ridge loop
+                showArrow:
+                  type: checkbox
+                  value: 'true'
+                imageRatio:
+                  type: select
+                  value: standard
+                description:
+                  type: text
+                  locales:
+                    en-US: >-
+                      A shaded circuit through evergreen forest and open
+                      ridgelines.
+                hoverEffect:
+                  type: select
+                  value: zoom
+                showDescription:
+                  type: checkbox
+                  value: 'true'
+            - _id: 7262f37f-69b5-47b3-a4c0-4492c2356800
+              type: linkCard
+              parameters:
+                link:
+                  type: link
+                  locales:
+                    en-US:
+                      path: /en-US
+                      type: url
+                image:
+                  type: asset
+                  value:
+                    - _id: d9863eff-f738-423c-8173-080b12de4e40
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: af1f6d76-29dd-4f70-94a4-afbe23cc3240
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/otbyiVJqQhO4s_3nN-VepQ-IMG_5007.jpeg
+                          type: text
+                        file:
+                          type: file
+                          value: 729a9c07-f66a-4da6-9c14-e850e4cfb4c7
+                        size:
+                          value: 7194156
+                          type: number
+                        title:
+                          type: text
+                          value: Mountain landscape beneath a blue sky
+                        width:
+                          value: 4284
+                          type: number
+                        height:
+                          value: 5712
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                        focalPoint:
+                          value:
+                            x: 0.72
+                            'y': 0.67
+                          type: focalPoint
+                        description:
+                          type: text
+                          value: >-
+                            A panoramic mountain landscape stretches beneath a
+                            bright blue sky with wispy white clouds. Layered
+                            forested ridges fill the lower portion of the scene,
+                            with evergreen branches framing the foreground.
+                      _source: uniform-assets
+                title:
+                  type: text
+                  locales:
+                    en-US: Skyline overlook
+                showArrow:
+                  type: checkbox
+                  value: 'true'
+                imageRatio:
+                  type: select
+                  value: standard
+                description:
+                  type: text
+                  locales:
+                    en-US: >-
+                      A short climb to a wide view of layered peaks under a blue
+                      sky.
+                hoverEffect:
+                  type: select
+                  value: zoom
+                showDescription:
+                  type: checkbox
+                  value: 'true'
+        parameters:
+          link:
+            type: link
+            locales:
+              en-US:
+                path: /en-US
+                type: url
+          columns:
+            type: select
+            value: '3'
+          eyebrow:
+            type: text
+            locales:
+              en-US: Featured routes
+          heading:
+            type: text
+            locales:
+              en-US: Find your next outing
+          linkText:
+            type: text
+            locales:
+              en-US: See all routes
+          sectionId:
+            type: text
+            value: outings
+          background:
+            type: select
+            value: subtle
+          subheading:
+            type: text
+            locales:
+              en-US: >-
+                Three ways to get outside this season, from alpine ridges to
+                forest loops.
+          showDivider:
+            type: checkbox
+            value: 'false'
+          headingAlign:
+            type: select
+            value: center
+          containerWidth:
+            type: select
+            value: default
+      - _id: 381457af-ef2d-443f-92c4-017893e2b662
+        type: cardGrid
+        _pattern: 51277d3f-5dac-4fd6-abeb-c206d9e46d01
+  _overrides:
+    381457af-ef2d-443f-92c4-017893e2b662:
+      dataResources:
+        Article List Content:
+          type: articleList
+          variables:
+            locale: ${locale}
+            search: ''
+            filters: '{"type[eq]":"article"}'
+            uiFilters: '[{"field":"type","operator":"eq","value":"article"}]'
+            contentTypes: article
+  _locales:
+    - en-US
+created: '2026-10-16T19:26:44.604207+00:00'
+modified: '2026-10-22T14:54:47.044863+00:00'
+pattern: false

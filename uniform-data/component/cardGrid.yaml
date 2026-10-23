@@ -7,46 +7,67 @@ parameters:
   - id: eyebrow
     name: Eyebrow
     type: text
-    guidance: Short badge label above the heading, 2-3 words.
+    guidance: Short badge above the heading, 2-4 words. Leave empty to hide the badge.
     localizable: true
   - id: heading
     name: Heading
     type: text
+    guidance: Section headline.
     typeConfig:
       required: true
     localizable: true
   - id: subheading
     name: Subheading
     type: text
-    guidance: One sentence supporting the heading.
+    guidance: One or two sentences under the heading.
     localizable: true
   - id: link
     name: Link
     type: link
+    guidance: >-
+      Optional destination for the footer button. Leave empty to hide the
+      button.
     typeConfig:
       linkTypes:
         tel: false
         email: false
+      linkAttributes:
+        enableAnchor: true
     localizable: true
   - id: linkText
     name: Link Text
     type: text
-    guidance: Short call-to-action label, 2-4 words.
+    guidance: Short call-to-action label for the footer button, 2-4 words.
     localizable: true
+  - id: layout
+    name: Layout
+    type: group
+    typeConfig:
+      childrenParams:
+        - columns
+        - background
+        - containerWidth
+        - headingAlign
+        - showDivider
+        - sectionId
   - id: columns
     name: Columns
     type: select
+    guidance: >-
+      Cards per row on large screens. Use 3 unless the design needs fewer or
+      more.
     typeConfig:
       options:
-        - text: 2 Columns
-          value: '2'
-        - text: 3 Columns
+        - text: 3 columns
           value: '3'
-        - text: 4 Columns
+        - text: 2 columns
+          value: '2'
+        - text: 4 columns
           value: '4'
   - id: background
     name: Background
     type: select
+    guidance: Section background. Plain sits on the page color.
     typeConfig:
       options:
         - text: Plain
@@ -58,17 +79,19 @@ parameters:
   - id: containerWidth
     name: Container Width
     type: select
+    guidance: Maximum width of the section content.
     typeConfig:
       options:
-        - text: Narrow
-          value: narrow
         - text: Default
           value: default
+        - text: Narrow
+          value: narrow
         - text: Wide
           value: wide
   - id: headingAlign
     name: Heading Alignment
     type: select
+    guidance: Alignment of the heading block and footer button.
     typeConfig:
       options:
         - text: Center
@@ -78,23 +101,24 @@ parameters:
   - id: showDivider
     name: Show Divider
     type: checkbox
+    guidance: Turn on to show a horizontal rule between the heading and the cards.
   - id: sectionId
-    name: Section ID
+    name: Section Id
     type: text
-description: >-
-  Section with a heading and a responsive grid of cards, with an optional footer
-  link.
+    guidance: >-
+      HTML id for in-page links. Use lowercase letters and hyphens, such as
+      featured-gear.
+description: A section of cards with a heading, optional eyebrow, and a footer link.
 useTeamPermissions: true
 slots:
   - id: cards
     name: Cards
-    minComponents: 1
     allowedComponents:
       - linkCard
       - $loop
     inheritAllowedComponents: false
-    patternsInAllowedComponents: true
-titleParameter: eyebrow
+    patternsInAllowedComponents: false
+titleParameter: heading
 canBeComposition: false
-created: '2026-10-07T13:43:55.54638+00:00'
-updated: '2026-10-08T17:01:41.089951+00:00'
+created: '2026-10-20T13:41:36.937369+00:00'
+updated: '2026-10-21T17:48:11.150361+00:00'

@@ -18,6 +18,7 @@ type ArticleDetailCompositionSlots =
  */
 export default function ArticleDetailComposition({
   slots,
+  context,
 }: ComponentProps<unknown, ArticleDetailCompositionSlots>) {
   const hasRelatedArticles = (slots.relatedArticles?.items?.length ?? 0) > 0;
 
@@ -29,7 +30,10 @@ export default function ArticleDetailComposition({
       >
         Skip to content
       </a>
-      <NavBar />
+      <NavBar
+        locale={context.dynamicInputs.locale}
+        matchedRoute={context.matchedRoute}
+      />
       <main id="main" className="flex-1">
         <UniformSlot slot={slots.content} />
         {/* The slot stays rendered when empty so authors can drop components into it */}

@@ -1,0 +1,9 @@
+id: b3e9f3a7-a5f6-4ea2-8dd6-067c296409cf
+name: Hiking Section
+order: 500
+path: /:locale/hiking-section
+type: composition
+pathSegment: hiking-section
+data: {}
+compositionId: 61b0f9ff-d35e-4bd9-8547-e0ff56f0a93b
+projectMapId: f2575263-3234-44de-86f1-b8dda404e3a6

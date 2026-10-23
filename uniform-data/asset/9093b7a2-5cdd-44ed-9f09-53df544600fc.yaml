@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 9093b7a2-5cdd-44ed-9f09-53df544600fc
+  _name: Mountain panorama beneath a cloudy sky
+  fields:
+    title:
+      type: text
+      value: Mountain panorama beneath a cloudy sky
+    description:
+      type: text
+      value: >-
+        A wide mountain panorama stretches beneath layered blue-gray clouds,
+        with rugged peaks, evergreen forests, rocky alpine terrain, and a valley
+        visible in the distance.
+    file:
+      type: file
+      value: dd3c464e-135e-4b73-ae21-85d573b5bf1b
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/XjZpinI7SjGLXj4mSD8vCQ-IMG_4814.jpeg
+      type: text
+    size:
+      value: 2680420
+      type: number
+    width:
+      value: 4032
+      type: number
+    height:
+      value: 3024
+      type: number
+    focalPoint:
+      value:
+        x: 0.67
+        'y': 0.72
+      type: focalPoint
+    custom: {}
+created: '2026-10-21T18:08:23.158104+00:00'
+modified: '2026-10-21T18:08:23.158104+00:00'

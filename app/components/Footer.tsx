@@ -1,9 +1,11 @@
 import Link from "next/link";
 
+import { defaultLocale } from "@/lib/uniform/locale";
+
 const links = [
   { href: "/#topics", label: "Explore" },
   { href: "/#featured-products", label: "Shop" },
-  { href: "/#news", label: "News" },
+  { href: `/${defaultLocale}/news`, label: "News" },
 ];
 
 export default function Footer() {

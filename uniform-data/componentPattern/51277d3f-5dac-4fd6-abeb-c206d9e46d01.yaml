@@ -1,0 +1,129 @@
+composition:
+  _name: Card Grid Pattern
+  _id: 51277d3f-5dac-4fd6-abeb-c206d9e46d01
+  type: cardGrid
+  parameters:
+    link:
+      type: link
+      locales:
+        en-US:
+          path: /en-US
+          type: url
+    columns:
+      type: select
+      value: '3'
+    eyebrow:
+      type: text
+      locales:
+        en-US: Featured routes
+    heading:
+      type: text
+      locales:
+        en-US: Latest News and Views
+    linkText:
+      type: text
+      locales:
+        en-US: See all routes
+    sectionId:
+      type: text
+      value: outings
+    background:
+      type: select
+      value: subtle
+    showDivider:
+      type: checkbox
+      value: 'false'
+    headingAlign:
+      type: select
+      value: center
+    containerWidth:
+      type: select
+      value: default
+  slots:
+    cards:
+      - _id: 6ef05c55-6d7c-4a0f-b34f-72b8d225554d
+        type: $loop
+        slots:
+          body:
+            - _id: 7e2d6ee3-ceaa-431a-ad29-b98750568155
+              type: linkCard
+              parameters:
+                link:
+                  type: link
+                  locales:
+                    en-US:
+                      path: >-
+                        /${locale}/articles/${#jptr:/Article List Content
+                        entries Loop Item/entry/_slug}
+                      type: projectMapNode
+                      nodeId: 9edba280-2eeb-4853-9b42-383bf5eb1a53
+                      projectMapId: f2575263-3234-44de-86f1-b8dda404e3a6
+                      dynamicInputValues:
+                        locale: ${locale}
+                        article-url: >-
+                          ${#jptr:/Article List Content entries Loop
+                          Item/entry/_slug}
+                image:
+                  type: asset
+                  value: >-
+                    ${#jptr:/Article List Content entries Loop
+                    Item/entry/fields/image/value}
+                title:
+                  type: text
+                  locales:
+                    en-US: >-
+                      ${#jptr:/Article List Content entries Loop
+                      Item/entry/fields/title/value}
+                showArrow:
+                  type: checkbox
+                  value: 'true'
+                imageRatio:
+                  type: select
+                  value: standard
+                description:
+                  type: text
+                  locales:
+                    en-US: >-
+                      ${#jptr:/Article List Content entries Loop
+                      Item/entry/fields/subtitle/value}
+                hoverEffect:
+                  type: select
+                  value: zoom
+                showDescription:
+                  type: checkbox
+                  value: 'true'
+        _dataResources:
+          Article List Content entries Loop Item:
+            type: sys-reserved-loop
+            variables:
+              connectedData: '#jptr:/Article List Content/entries:fa=c'
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Article List Content:
+      type: articleList
+      variables:
+        locale: ${locale}
+        filters: '{"type[eq]":"article"}'
+        contentTypes: article
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      $viz: 'no'
+      link: 'yes'
+      columns: 'no'
+      eyebrow: 'yes'
+      heading: 'yes'
+      linkText: 'yes'
+      sectionId: 'no'
+      background: 'yes'
+      subheading: 'yes'
+      showDivider: 'no'
+      headingAlign: 'no'
+      containerWidth: 'no'
+  _locales:
+    - en-US
+created: '2026-10-21T17:39:45.365868+00:00'
+modified: '2026-10-21T18:02:42.496347+00:00'
+pattern: true

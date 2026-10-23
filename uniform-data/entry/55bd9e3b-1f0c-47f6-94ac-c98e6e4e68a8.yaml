@@ -1,0 +1,19 @@
+created: '2026-10-21T17:30:06.124436+00:00'
+modified: '2026-10-21T17:30:15.997361+00:00'
+pattern: false
+entry:
+  _id: 55bd9e3b-1f0c-47f6-94ac-c98e6e4e68a8
+  _name: Patrick Coyne
+  _slug: patrick-coyne
+  type: author
+  fields:
+    name:
+      type: text
+      locales:
+        en-US: Patrick Coyne
+    title:
+      type: text
+      locales:
+        en-US: Hiker
+  _locales:
+    - en-US

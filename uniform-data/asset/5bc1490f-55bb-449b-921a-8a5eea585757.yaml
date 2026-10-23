@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 5bc1490f-55bb-449b-921a-8a5eea585757
+  _name: Joshua trees and mountain landscape
+  fields:
+    title:
+      type: text
+      value: Joshua trees and mountain landscape
+    description:
+      type: text
+      value: >-
+        A wide mountain landscape beneath a bright blue sky with wispy clouds,
+        layered ridges, and distinctive Joshua trees rising from a dense
+        forested foreground.
+    file:
+      type: file
+      value: e1d7798c-d85b-4e55-bac9-32cc5752bb1b
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/BOZUxeB3QFSqaKZKLPwC1A-IMG_4960.jpeg
+      type: text
+    size:
+      value: 5934644
+      type: number
+    width:
+      value: 5712
+      type: number
+    height:
+      value: 4284
+      type: number
+    focalPoint:
+      value:
+        x: 0.5
+        'y': 0.62
+      type: focalPoint
+    custom: {}
+created: '2026-10-20T22:47:12.977322+00:00'
+modified: '2026-10-20T22:47:12.977322+00:00'

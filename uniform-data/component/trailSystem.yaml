@@ -7,20 +7,26 @@ parameters:
   - id: name
     name: Name
     type: text
-    guidance: Do not type here. Connect to the trail system name from the loop item.
-description: >-
-  A trail system with its name and a list of its activities. Place a Loop in the
-  Activities slot to repeat one Trail Activity per activity.
+    typeConfig: null
+    localizable: true
+  - id: numberOfTrailSystems
+    name: Number of Trail Systems
+    type: number
+    helpText: how many trail systems you would like to display
+    typeConfig:
+      max: 12
+      min: 1
 useTeamPermissions: true
 slots:
   - id: activities
     name: Activities
     allowedComponents:
-      - $loop
       - trailActivity
+      - $loop
+    allowAllComponents: false
     inheritAllowedComponents: false
-    patternsInAllowedComponents: true
+    patternsInAllowedComponents: false
 titleParameter: name
 canBeComposition: false
-created: '2026-10-19T11:13:45.132214+00:00'
-updated: '2026-10-19T11:13:45.132214+00:00'
+created: '2026-10-21T18:30:47.34043+00:00'
+updated: '2026-10-22T15:29:04.19247+00:00'

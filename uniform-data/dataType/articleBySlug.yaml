@@ -1,16 +1,18 @@
 id: articleBySlug
 displayName: Article By Slug
-created: '2026-10-08T09:49:31.394982+00:00'
-modified: '2026-10-08T09:49:31.394982+00:00'
-createdBy: google-oauth2|118138255479849584814
+created: '2026-10-21T12:06:28.658966+00:00'
+modified: '2026-10-21T15:44:10.255234+00:00'
+createdBy: google-oauth2|117609956831366283522
+modifiedBy: google-oauth2|117609956831366283522
 ttl: 30
+body: ''
 path: /single-by-slug
 custom:
   proposedName: Article
   allowedContentTypes:
     - article
 method: GET
-purgeKey: ee59c042-8920-414b-b1de-547c996454b5
+purgeKey: ceff0f71-45c9-4617-9d0e-2cf3a9dce650
 archetype: singleEntryBySlug
 variables:
   slug:

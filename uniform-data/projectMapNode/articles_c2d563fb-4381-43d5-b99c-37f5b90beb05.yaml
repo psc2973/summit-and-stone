@@ -1,8 +1,0 @@
-id: c2d563fb-4381-43d5-b99c-37f5b90beb05
-name: Articles
-order: 500
-path: /:locale/articles
-type: placeholder
-pathSegment: articles
-data: {}
-projectMapId: 82aca4d7-61fa-4e5a-b6e5-a36ad6de83ad

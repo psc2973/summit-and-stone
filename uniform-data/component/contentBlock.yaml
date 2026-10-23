@@ -49,18 +49,16 @@ parameters:
       linkTypes:
         tel: false
         email: false
-      linkAttributes:
-        enableAnchor: true
     localizable: true
   - id: linkText
     name: Link Text
     type: text
-    guidance: Short call-to-action label for the link, 2-4 words.
+    typeConfig: null
     localizable: true
-categoryId: d61bdc5d-c3ac-4ea1-bac8-7ced8a49f914
+categoryId: d8585dab-4473-42f8-89c5-b87ad145b548
 useTeamPermissions: true
 slots: []
 titleParameter: heading
 canBeComposition: false
-created: '2026-10-07T08:19:32.355582+00:00'
-updated: '2026-10-07T08:28:10.630801+00:00'
+created: '2026-10-19T18:21:03.076123+00:00'
+updated: '2026-10-19T19:00:14.031855+00:00'

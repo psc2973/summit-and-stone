@@ -1,0 +1,266 @@
+composition:
+  _name: Hiking Section
+  _id: 61b0f9ff-d35e-4bd9-8547-e0ff56f0a93b
+  _slug: hiking-section
+  type: page
+  slots:
+    content:
+      - _id: 69ae6d63-7b77-4965-a56e-bdeb5b7a2016
+        type: heroSection
+        parameters:
+          image:
+            type: asset
+            locales:
+              en-US:
+                - _id: bc50a0f1-fe7f-490c-a307-96fca619ee76
+                  type: image
+                  fields:
+                    id:
+                      type: text
+                      value: fe24a1ba-2790-45f9-9b88-bf0230366fcf
+                    url:
+                      value: >-
+                        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/eb2CEmasTh-59PYXKj9nFQ-photo-1551632811-561732d1e306
+                      type: text
+                    file:
+                      type: file
+                      value: 070578f2-963d-4bd3-a5bf-51217bb2f654
+                    size:
+                      value: 547329
+                      type: number
+                    title:
+                      type: text
+                      value: Hikers on a mountain trail
+                    width:
+                      value: 1600
+                      type: number
+                    height:
+                      value: 1068
+                      type: number
+                    mediaType:
+                      value: image/jpeg
+                      type: text
+                    focalPoint:
+                      value:
+                        x: 0.68
+                        'y': 0.61
+                      type: focalPoint
+                    description:
+                      type: text
+                      value: >-
+                        Hikers walking along a mountain trail beneath snowy
+                        peaks
+                  _source: uniform-assets
+          title:
+            type: text
+            locales:
+              en-US: Hiking
+          subtitle:
+            type: text
+            locales:
+              en-US: Hiking the peaks in 2026
+      - _id: 680ddf15-f4ee-43df-b435-9f03953491a2
+        type: imageWithText
+        parameters:
+          link:
+            type: link
+            locales:
+              en-US:
+                path: '#'
+                type: url
+          image:
+            type: asset
+            value:
+              - _id: cb91e1aa-8c78-4442-bc57-4f682b36696a
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 6606ed96-64a4-4492-b926-96ace1781f6d
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/BfCDWnXSQjq7ZjQ9UeDgIQ-IMG_5006.jpeg
+                    type: text
+                  file:
+                    type: file
+                    value: f871596a-36e4-4369-a8a0-6a391ff46b9f
+                  size:
+                    value: 8252636
+                    type: number
+                  title:
+                    type: text
+                    value: Climbing through a forested slope
+                  width:
+                    value: 4284
+                    type: number
+                  height:
+                    value: 5712
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                  focalPoint:
+                    value:
+                      x: 0.56
+                      'y': 0.8
+                    type: focalPoint
+                  description:
+                    type: text
+                    value: >-
+                      A person in a gray shirt and dark pants navigates a steep,
+                      rocky forest slope among moss-covered roots, trees, and
+                      tangled branches, using a fixed metal cable for support.
+                _source: uniform-assets
+          heading:
+            type: text
+            locales:
+              en-US: Gear up for every trail
+          linkText:
+            type: text
+            locales:
+              en-US: Learn more
+          subheading:
+            type: text
+            locales:
+              en-US: Explore the peaks with gear built for every trail.
+      - _id: 4e983dea-0ac1-4d8c-bea1-d4859b0f24e2
+        type: $loop
+        slots:
+          body:
+            - _id: c1df685f-3109-43ac-96d0-eb8ad2c91191
+              type: trailSystem
+              slots:
+                activities:
+                  - _id: 953ecf4a-5133-4fbf-98cd-0b48b89c895e
+                    type: $loop
+                    slots:
+                      body:
+                        - _id: eb039fc1-bf56-4c7b-96ed-039f60f6f145
+                          type: trailActivity
+                          parameters:
+                            label:
+                              type: text
+                              locales:
+                                en-US: >-
+                                  ${#jptr:/trail-systems Content features Loop
+                                  item activities Loop Item/label}
+                            openTrails:
+                              type: text
+                              locales:
+                                en-US: >-
+                                  ${#jptr:/trail-systems Content features Loop
+                                  item activities Loop Item/openTrails}
+                            totalTrails:
+                              type: text
+                              locales:
+                                en-US: >-
+                                  ${#jptr:/trail-systems Content features Loop
+                                  item activities Loop Item/totalTrails}
+                            totalDistance:
+                              type: text
+                              locales:
+                                en-US: >-
+                                  ${#jptr:/trail-systems Content features Loop
+                                  item activities Loop Item/totalDistance}
+                    _dataResources:
+                      trail-systems Content features Loop item activities Loop Item:
+                        type: sys-reserved-loop
+                        variables:
+                          connectedData: >-
+                            #jptr:/trail-systems Content features Loop
+                            item/properties/activities:fa=c
+                  - _id: 6d49e646-1e72-4e98-9cab-c6dc608daa9e
+                    type: trailActivity
+                    parameters:
+                      label:
+                        type: text
+                        locales:
+                          en-US: >-
+                            ${#jptr:/trail-systems Content features Loop
+                            item/properties/activities/0/label}
+                      openTrails:
+                        type: text
+                        locales:
+                          en-US: >-
+                            ${#jptr:/trail-systems Content features Loop
+                            item/properties/activities/0/openTrails}
+                      totalTrails:
+                        type: text
+                        locales:
+                          en-US: >-
+                            ${#jptr:/trail-systems Content features Loop
+                            item/properties/activities/0/totalTrails}
+                      totalDistance:
+                        type: text
+                        locales:
+                          en-US: >-
+                            ${#jptr:/trail-systems Content features Loop
+                            item/properties/activities/0/totalDistance}
+              parameters:
+                name:
+                  type: text
+                  locales:
+                    en-US: >-
+                      ${#jptr:/trail-systems Content features Loop
+                      item/properties/name} 
+                numberOfTrailSystems:
+                  type: number
+                  value: 6
+        _dataResources:
+          trail-systems Content features Loop item:
+            type: sys-reserved-loop
+            variables:
+              connectedData: '#jptr:/trail-systems Content/features:fa=c'
+      - _id: 02ab73db-6511-4084-b5b2-00f90b684b08
+        type: contentBlock
+        parameters:
+          link:
+            type: link
+            locales:
+              en-US:
+                path: '#'
+                type: url
+          content:
+            type: richText
+            locales:
+              en-US:
+                root:
+                  type: root
+                  version: 1
+                  children:
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            From alpine switchbacks to forest trails, the right
+                            gear makes every mile more comfortable and every
+                            summit more rewarding. Explore dependable hiking
+                            essentials designed to perform when the weather
+                            shifts and the terrain gets steep.
+                          type: text
+                          format: 0
+                          version: 1
+                    - type: paragraph
+                      version: 1
+                      children:
+                        - text: >-
+                            Pack smarter for your next adventure with durable
+                            layers, trail-ready footwear, and reliable equipment
+                            made for long days outside. Wherever the path leads,
+                            go prepared to enjoy the journey.
+                          type: text
+                          format: 0
+                          version: 1
+          heading:
+            type: text
+            locales:
+              en-US: Built for the trail ahead
+  _dataResources:
+    trail-systems Content:
+      type: trailSystems
+      variables: {}
+  _locales:
+    - en-US
+created: '2026-10-20T20:03:26.409372+00:00'
+modified: '2026-10-22T15:44:22.175276+00:00'
+pattern: false

@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 6606ed96-64a4-4492-b926-96ace1781f6d
+  _name: Climbing through a forested slope
+  fields:
+    title:
+      type: text
+      value: Climbing through a forested slope
+    description:
+      type: text
+      value: >-
+        A person in a gray shirt and dark pants navigates a steep, rocky forest
+        slope among moss-covered roots, trees, and tangled branches, using a
+        fixed metal cable for support.
+    file:
+      type: file
+      value: f871596a-36e4-4369-a8a0-6a391ff46b9f
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/BfCDWnXSQjq7ZjQ9UeDgIQ-IMG_5006.jpeg
+      type: text
+    size:
+      value: 8252636
+      type: number
+    width:
+      value: 4284
+      type: number
+    height:
+      value: 5712
+      type: number
+    focalPoint:
+      value:
+        x: 0.56
+        'y': 0.8
+      type: focalPoint
+    custom: {}
+created: '2026-10-20T20:12:13.709226+00:00'
+modified: '2026-10-20T20:12:13.709226+00:00'

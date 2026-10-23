@@ -1,0 +1,40 @@
+asset:
+  type: image
+  _id: 6ff692be-a0d3-4f83-9eb3-c4c21b7cc3e4
+  _name: Alpine Sunrise Hike Article Screenshot
+  fields:
+    title:
+      type: text
+      value: Alpine Sunrise Hike
+    description:
+      type: text
+      value: >-
+        Screenshot of the article page for How to Plan Your First Alpine Sunrise
+        Hike.
+    file:
+      type: file
+      value: 6fac1137-f872-414e-b6df-8d637dd40b6a
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/xtUFqkLxTSmCJ4lW5-6LXA-localhost_3001_static_news_plan-your-first-alpine-sunrise-hike.png
+      type: text
+    size:
+      value: 1732270
+      type: number
+    width:
+      value: 1350
+      type: number
+    height:
+      value: 2641
+      type: number
+    focalPoint:
+      value:
+        x: 0.33
+        'y': 0.22
+      type: focalPoint
+    custom: {}
+created: '2026-10-20T20:47:03.983266+00:00'
+modified: '2026-10-20T20:47:03.983266+00:00'

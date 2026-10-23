@@ -1,0 +1,41 @@
+asset:
+  type: image
+  _id: 90245c4f-0901-4eed-a7eb-f77b84ed5369
+  _name: Mountain ridge and forest
+  fields:
+    title:
+      type: text
+      value: Mountain ridge and forest
+    description:
+      type: text
+      value: >-
+        A wide view of layered mountain ridges above a dense evergreen forest,
+        with autumn-colored foliage in the foreground and a pale blue sky
+        overhead.
+    file:
+      type: file
+      value: 96dceb7f-1858-4331-9a7a-86a970599980
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/-ivtpC7wRZaIoAZnfFggng/UzplvFoCSAGWBCt9lzQ5jQ-IMG_4977.jpeg
+      type: text
+    size:
+      value: 3470231
+      type: number
+    width:
+      value: 4032
+      type: number
+    height:
+      value: 3024
+      type: number
+    focalPoint:
+      value:
+        x: 0.51
+        'y': 0.51
+      type: focalPoint
+    custom: {}
+created: '2026-10-19T17:30:30.664687+00:00'
+modified: '2026-10-19T17:30:30.664687+00:00'
