@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: skiConditions
+name: Ski Conditions
+icon: screen
+parameters:
+  - id: resortName
+    name: Resort Name
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: freshSnow
+    name: Fresh Snow
+    type: text
+    helpText: Connect to daily > snowfall_sum > 0 (today's snowfall)
+    typeConfig: null
+    localizable: true
+  - id: highTemp
+    name: High Temp
+    type: text
+    helpText: Connect to daily > temperature_2m_max > 0
+    typeConfig: null
+    localizable: true
+  - id: lowTemp
+    name: Low Temp
+    type: text
+    helpText: Connect to daily > temperature_2m_min > 0
+    typeConfig: null
+    localizable: true
+  - id: note
+    name: Note
+    type: text
+    helpText: Optional message shown under the conditions
+    typeConfig: null
+    localizable: true
+useTeamPermissions: true
+slots: []
+titleParameter: resortName
+canBeComposition: false

@@ -24,6 +24,7 @@ slots:
       - trailSystem
       - $loop
       - trailActivity
+      - skiConditions
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false

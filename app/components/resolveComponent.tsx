@@ -12,6 +12,7 @@ import ImageWithText from "./ImageWithText";
 import LinkCard from "./LinkCard";
 import NewsArticle from "./NewsArticle";
 import Page from "./Page";
+import SkiConditions from "./SkiConditions";
 import TrailActivity from "./TrailActivity";
 import TrailList from "./TrailList";
 import TrailSystem, {
@@ -31,6 +32,7 @@ const componentMap: Record<string, ResolveComponentResult["component"]> = {
   trailList: TrailList,
   trailSystem: TrailSystem,
   trailActivity: TrailActivity,
+  skiConditions: SkiConditions,
 };
 
 const NotFoundComponent = ({ type }: ComponentProps) => (
